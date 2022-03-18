@@ -51,7 +51,7 @@ p6_jenkins_prompt_info() {
 ######################################################################
 p6_jenkins_cli_wrapper() {
 
-    java -jar $P6_DFZ_SRC_DIR/p6m7g8/p6df-jenkins/libexec/jenkins-cli.jar -webSocket "$@"
+    java -jar $P6_DFZ_SRC_P6M7G8_DIR/p6df-jenkins/libexec/jenkins-cli.jar -webSocket "$@"
 }
 
 ######################################################################
