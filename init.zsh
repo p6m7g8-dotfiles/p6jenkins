@@ -7,18 +7,9 @@
 ######################################################################
 p6df::modules::p6jenkins::deps() {
     ModuleDeps=(
-        p6m7g8/p6common
+        p6m7g8-dotfiles/p6common
     )
 }
-
-######################################################################
-#<
-#
-# Function: p6df::modules::p6jenkins::init()
-#
-#>
-######################################################################
-p6df::modules::p6jenkins::init() {; }
 
 ######################################################################
 #<
@@ -51,7 +42,7 @@ p6_jenkins_prompt_info() {
 ######################################################################
 p6_jenkins_cli_wrapper() {
 
-    java -jar $P6_DFZ_SRC_P6M7G8_DIR/p6df-jenkins/libexec/jenkins-cli.jar -webSocket "$@"
+    java -jar $P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-jenkins/libexec/jenkins-cli.jar -webSocket "$@"
 }
 
 ######################################################################
