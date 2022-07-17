@@ -50,7 +50,6 @@
 - p6_jenkins_job_tail(job_name, ...)
 - p6_jenkins_jobs_list()
 - p6df::modules::p6jenkins::deps()
-- p6df::modules::p6jenkins::init()
 - str str = p6_jenkins_prompt_info()
 
 

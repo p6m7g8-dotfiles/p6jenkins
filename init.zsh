@@ -19,6 +19,7 @@ p6df::modules::p6jenkins::deps() {
 #  Returns:
 #	str - str
 #
+#  Environment:	 JENKINS_URL
 #>
 ######################################################################
 p6_jenkins_prompt_info() {
@@ -38,6 +39,7 @@ p6_jenkins_prompt_info() {
 #
 # Function: p6_jenkins_cli_wrapper()
 #
+#  Environment:	 P6_DFZ_SRC_P6M7G8_DOTFILES_DIR
 #>
 ######################################################################
 p6_jenkins_cli_wrapper() {
