@@ -7,9 +7,9 @@
 #>
 ######################################################################
 p6df::modules::p6jenkins::deps() {
-  ModuleDeps=(
-    p6m7g8-dotfiles/p6common
-  )
+    ModuleDeps=(
+        p6m7g8-dotfiles/p6common
+    )
 }
 
 ######################################################################
@@ -31,7 +31,7 @@ p6_jenkins_prompt_info() {
         str="jenkins:  $JENKINS_URL ($JENKINS_USER_ID)"
         p6_return_str "$str"
     else
-	p6_return_void
+        p6_return_void
     fi
 }
 
