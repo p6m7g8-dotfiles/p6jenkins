@@ -29,10 +29,8 @@ p6_jenkins_prompt_info() {
 
     if p6_file_exists "Jenkinsfile"; then
         str="jenkins:  $JENKINS_URL ($JENKINS_USER_ID)"
-        p6_return_str "$str"
-    else
-        p6_return_void
     fi
+    p6_return_str "$str"
 }
 
 ######################################################################
