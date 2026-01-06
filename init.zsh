@@ -43,7 +43,7 @@ p6_jenkins_prompt_info() {
 ######################################################################
 p6_jenkins_cli_wrapper() {
 
-    java -jar $P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-jenkins/libexec/jenkins-cli.jar -webSocket "$@"
+    java -jar "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-jenkins/libexec/jenkins-cli.jar" -webSocket "$@"
 }
 
 ######################################################################
@@ -73,7 +73,7 @@ p6_jenkins_job_get() {
     local job_name="$1"
     shift 1
 
-    p6_jenkins_cli_wrapper get-job $job_name "$@"
+    p6_jenkins_cli_wrapper get-job "$job_name" "$@"
 }
 
 ######################################################################
@@ -91,7 +91,7 @@ p6_jenkins_job_build() {
     local job_name="$1"
     shift 1
 
-    p6_jenkins_cli_wrapper build $job_name "$@"
+    p6_jenkins_cli_wrapper build "$job_name" "$@"
 }
 
 ######################################################################
@@ -109,5 +109,5 @@ p6_jenkins_job_tail() {
     local job_name="$1"
     shift 1
 
-    p6_jenkins_cli_wrapper console $job_name "$@"
+    p6_jenkins_cli_wrapper console "$job_name" "$@"
 }
