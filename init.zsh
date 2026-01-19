@@ -20,7 +20,7 @@ p6df::modules::p6jenkins::deps() {
 #  Returns:
 #	str - str
 #
-#  Environment:	 JENKINS_URL
+#  Environment:	 JENKINS_URL JENKINS_USER_ID
 #>
 ######################################################################
 p6_jenkins_prompt_info() {
