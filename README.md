@@ -42,8 +42,17 @@ TODO: Add a short summary of this module.
 
 - `p6_jenkins_cli_wrapper()`
 - `p6_jenkins_job_build(job_name, ...)`
+  - Args:
+    - job_name - 
+    - ... - 
 - `p6_jenkins_job_get(job_name, ...)`
+  - Args:
+    - job_name - 
+    - ... - 
 - `p6_jenkins_job_tail(job_name, ...)`
+  - Args:
+    - job_name - 
+    - ... - 
 - `p6_jenkins_jobs_list()`
 - `p6df::modules::p6jenkins::deps()`
 - `str str = p6_jenkins_prompt_info()`
